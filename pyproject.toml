@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "unfairness"
+version = "0.1.0"
+description = "This project is dedicated to the development and analysis of heuristic-based shilling attacks aimed at introducing unfairness towards consumers."
+authors = ["To be added after review"]
+license = "MIT"
+readme = "README.md"
+# Without this Poetry never installs the project, so every script had to put the
+# repo root on sys.path itself. With it, `poetry install` makes src and
+# experiments importable and that boilerplate disappears.
+packages = [{ include = "src" }, { include = "experiments" }]
+
+[tool.poetry.dependencies]
+# Restrict to Python versions compatible with Matplotlib 3.5.3
+python = ">=3.10,<3.11"
+pandas = "^2.2.1"
+recpack = "^0.3.6"
+bottleneck = "^1.3.8"
+prettytable = "^3.10.2"
+matplotlib = "==3.5.3"
+webcolors = "==1.11.1"
+recbole = "^1.2.1"
+pyyaml = "^6.0.2"
+cornac = "==2.2.2"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

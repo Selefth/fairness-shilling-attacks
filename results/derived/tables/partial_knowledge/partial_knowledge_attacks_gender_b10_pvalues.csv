@@ -1,0 +1,326 @@
+dataset,model,model_kind,attack_id,attack,c_fairness,p_value,significant_p_0_05,p_value_bh_all,significant_bh_all,included_in_table
+ml-100k,bnslim-u-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.935308053030932,0.2918859521815702,False,0.6906307164057479,False,True
+ml-100k,bnslim-u-gender,fair,cfair_sampling_push_random,Sampling,0.9590653452235968,0.3360111689875888,False,0.7428818361970501,False,True
+ml-100k,bnslim-u-gender,fair,cfair_influencer_top1_push_random,Top-1,0.9624970617745032,0.7306856569217064,False,0.9240188268465158,False,True
+ml-100k,bnslim-u-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9259739681730128,0.1017462439927211,False,0.42468145335339247,False,True
+ml-100k,bnslim-u-gender,fair,cfair_influencer_top10_push_random,Top-10,0.9135977170462164,0.0456220352986232,True,0.3061285748794156,False,True
+ml-100k,ease-i,base,cfair_influencer_push_random,C-Fair Influencer,0.9619945270890206,0.1421133431061624,False,0.5131870723278086,False,False
+ml-100k,ease-i,base,cfair_sampling_push_random,Sampling,0.9806770639391718,0.777012439280796,False,0.9565494044176466,False,False
+ml-100k,ease-i,base,cfair_influencer_top1_push_random,Top-1,0.9629829063311256,0.2134177742433347,False,0.6227365809330841,False,False
+ml-100k,ease-i,base,cfair_influencer_top5_push_random,Top-5,0.9467564102711862,0.3342952050358271,False,0.7428818361970501,False,False
+ml-100k,ease-i,base,cfair_influencer_top10_push_random,Top-10,0.9598343512844344,0.4939768074322166,False,0.8014811799214844,False,False
+ml-100k,ease-u,base,cfair_influencer_push_random,C-Fair Influencer,0.8726144482008362,0.0989355452819302,False,0.42468145335339247,False,True
+ml-100k,ease-u,base,cfair_sampling_push_random,Sampling,0.9451340812199208,0.009964133701239,True,0.17043912910014078,False,True
+ml-100k,ease-u,base,cfair_influencer_top1_push_random,Top-1,1.000760328701272,0.7194802866307574,False,0.9185409963335497,False,True
+ml-100k,ease-u,base,cfair_influencer_top5_push_random,Top-5,0.9795985994963052,0.6067383743538242,False,0.8648682967762844,False,True
+ml-100k,ease-u,base,cfair_influencer_top10_push_random,Top-10,0.9701974777214276,0.5954722553855609,False,0.8525483832612656,False,True
+ml-100k,mf,base,cfair_influencer_push_random,C-Fair Influencer,0.9009401651623608,0.3835983332629304,False,0.7847936868811842,False,False
+ml-100k,mf,base,cfair_sampling_push_random,Sampling,0.9638777821762492,0.8118117574858406,False,0.9627240130839279,False,False
+ml-100k,mf,base,cfair_influencer_top1_push_random,Top-1,0.9245385797794052,0.5820333150102379,False,0.8436861484766094,False,False
+ml-100k,mf,base,cfair_influencer_top5_push_random,Top-5,0.9811292850575066,0.6653390958477617,False,0.8934386922447429,False,False
+ml-100k,mf,base,cfair_influencer_top10_push_random,Top-10,0.9399908559981364,0.4872964257693715,False,0.8014811799214844,False,False
+ml-100k,mf-absolute-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.8896624635117665,0.0454555967225566,True,0.3061285748794156,False,True
+ml-100k,mf-absolute-gender,fair,cfair_sampling_push_random,Sampling,0.920331802904232,0.0074298000481789,True,0.14532252315628222,False,True
+ml-100k,mf-absolute-gender,fair,cfair_influencer_top1_push_random,Top-1,0.937088396962901,0.0165310536401131,True,0.19932958943503787,False,True
+ml-100k,mf-absolute-gender,fair,cfair_influencer_top5_push_random,Top-5,0.7593515816260223,0.0046077564902281,True,0.1151939122557025,False,True
+ml-100k,mf-absolute-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8643842312797991,0.0151625059866638,True,0.19932958943503787,False,True
+ml-100k,mf-over-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.9819411470706012,0.3614339194094063,False,0.7802203420346734,False,False
+ml-100k,mf-over-gender,fair,cfair_sampling_push_random,Sampling,0.962078804186856,0.1926382812450056,False,0.5962613467107316,False,False
+ml-100k,mf-over-gender,fair,cfair_influencer_top1_push_random,Top-1,0.893778001917917,0.2707062546753885,False,0.671599486790086,False,False
+ml-100k,mf-over-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9246232144523824,0.4456642552552139,False,0.8014811799214844,False,False
+ml-100k,mf-over-gender,fair,cfair_influencer_top10_push_random,Top-10,0.9539946598337478,0.432043573233316,False,0.8014811799214844,False,False
+ml-100k,mf-under-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.8988789564852816,0.5548221118604361,False,0.8271430566726685,False,False
+ml-100k,mf-under-gender,fair,cfair_sampling_push_random,Sampling,0.9367877082820408,0.433959853023726,False,0.8014811799214844,False,False
+ml-100k,mf-under-gender,fair,cfair_influencer_top1_push_random,Top-1,0.9467362791370504,0.7943529502240527,False,0.9609417848005137,False,False
+ml-100k,mf-under-gender,fair,cfair_influencer_top5_push_random,Top-5,0.955292654007912,0.5030835713968702,False,0.8014811799214844,False,False
+ml-100k,mf-under-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8848550579154781,0.3887747187319097,False,0.7847936868811842,False,False
+ml-100k,mf-value-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.9313994735689636,0.0050398631762112,True,0.11699682373347428,False,True
+ml-100k,mf-value-gender,fair,cfair_sampling_push_random,Sampling,0.9892512121415734,0.1019235488048142,False,0.42468145335339247,False,True
+ml-100k,mf-value-gender,fair,cfair_influencer_top1_push_random,Top-1,0.9304703541479302,0.0333141148882798,True,0.2849233510181825,False,True
+ml-100k,mf-value-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9235179561449224,0.2241851691359103,False,0.6227365809330841,False,True
+ml-100k,mf-value-gender,fair,cfair_influencer_top10_push_random,Top-10,0.9563426716996972,0.0753905076434077,False,0.3951921771630242,False,True
+ml-100k,neumf,base,cfair_influencer_push_random,C-Fair Influencer,0.8769366838690673,0.5146434424670913,False,0.8072215909406869,False,False
+ml-100k,neumf,base,cfair_sampling_push_random,Sampling,0.9661243635014326,0.6996479854714679,False,0.9148276168137657,False,False
+ml-100k,neumf,base,cfair_influencer_top1_push_random,Top-1,1.0020698591099662,0.8652837243204794,False,0.9627240130839279,False,False
+ml-100k,neumf,base,cfair_influencer_top5_push_random,Top-5,0.8140302389794529,0.1167939210121913,False,0.4573255943248455,False,False
+ml-100k,neumf,base,cfair_influencer_top10_push_random,Top-10,0.8109526414815608,0.1195276669004695,False,0.4605645771310656,False,False
+ml-100k,nmf,base,cfair_influencer_push_random,C-Fair Influencer,0.8307003987308502,0.4315829668278127,False,0.8014811799214844,False,False
+ml-100k,nmf,base,cfair_sampling_push_random,Sampling,0.8644399236804858,0.2629292416498354,False,0.6675937776265352,False,False
+ml-100k,nmf,base,cfair_influencer_top1_push_random,Top-1,0.8588302637781747,0.1859223384196493,False,0.5866481552076313,False,False
+ml-100k,nmf,base,cfair_influencer_top5_push_random,Top-5,0.883964487252876,0.76814813163592,False,0.9534693722359593,False,False
+ml-100k,nmf,base,cfair_influencer_top10_push_random,Top-10,0.873062465155404,0.6326172490354861,False,0.8748961954746085,False,False
+ml-100k,slim-i,base,cfair_influencer_push_random,C-Fair Influencer,0.9549073586059234,0.2787301064622441,False,0.6811074030092431,False,False
+ml-100k,slim-i,base,cfair_sampling_push_random,Sampling,0.9556996613967668,0.5700336987046102,False,0.8436861484766094,False,False
+ml-100k,slim-i,base,cfair_influencer_top1_push_random,Top-1,0.956238520170852,0.6516465365417807,False,0.8832634150390458,False,False
+ml-100k,slim-i,base,cfair_influencer_top5_push_random,Top-5,0.9663395698322604,0.8211692313757347,False,0.9627240130839279,False,False
+ml-100k,slim-i,base,cfair_influencer_top10_push_random,Top-10,0.9693848725982438,0.5758316878530674,False,0.8436861484766094,False,False
+ml-100k,slim-u,base,cfair_influencer_push_random,C-Fair Influencer,0.9343295684788704,0.2551389105054433,False,0.6633611673141526,False,False
+ml-100k,slim-u,base,cfair_sampling_push_random,Sampling,0.9578938624006956,0.2296006371335056,False,0.6323746361727909,False,False
+ml-100k,slim-u,base,cfair_influencer_top1_push_random,Top-1,0.9625883006982002,0.6196631580731211,False,0.8748961954746085,False,False
+ml-100k,slim-u,base,cfair_influencer_top5_push_random,Top-5,0.924442800857215,0.0740072930954827,False,0.3943011517382275,False,False
+ml-100k,slim-u,base,cfair_influencer_top10_push_random,Top-10,0.9153917430599242,0.0625584251714393,False,0.36306228894138876,False,False
+ml-100k,svd,base,cfair_influencer_push_random,C-Fair Influencer,0.845589011485918,0.3697044082256606,False,0.7802203420346734,False,False
+ml-100k,svd,base,cfair_sampling_push_random,Sampling,0.8433713908479142,0.5301970719152578,False,0.8166542576893782,False,False
+ml-100k,svd,base,cfair_influencer_top1_push_random,Top-1,0.8610421575302823,0.5848728311366826,False,0.8436861484766094,False,False
+ml-100k,svd,base,cfair_influencer_top5_push_random,Top-5,0.8446532092995602,0.2932524272738253,False,0.6906307164057479,False,False
+ml-100k,svd,base,cfair_influencer_top10_push_random,Top-10,0.834506146481946,0.0569587063598574,False,0.34419957093198267,False,False
+ml-1m,bnslim-u-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.8711832833945392,0.4530166948599035,False,0.8014811799214844,False,False
+ml-1m,bnslim-u-gender,fair,cfair_sampling_push_random,Sampling,0.8782138420441846,0.3106622802372986,False,0.716065539554057,False,False
+ml-1m,bnslim-u-gender,fair,cfair_influencer_top1_push_random,Top-1,0.8792163096260698,0.8629255907132986,False,0.9627240130839279,False,False
+ml-1m,bnslim-u-gender,fair,cfair_influencer_top5_push_random,Top-5,0.8723466496743922,0.65699924311921,False,0.8859948299325445,False,False
+ml-1m,bnslim-u-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8718540452779578,0.836539091773544,False,0.9627240130839279,False,False
+ml-1m,ease-i,base,cfair_influencer_push_random,C-Fair Influencer,0.8982739139350704,0.6376079632336827,False,0.8780618137751987,False,False
+ml-1m,ease-i,base,cfair_sampling_push_random,Sampling,0.8994881445471586,0.7143264327470193,False,0.9185409963335497,False,False
+ml-1m,ease-i,base,cfair_influencer_top1_push_random,Top-1,0.908755350678709,0.9098488386832676,False,0.9771100975776238,False,False
+ml-1m,ease-i,base,cfair_influencer_top5_push_random,Top-5,0.8946286266480449,0.5011932563397169,False,0.8014811799214844,False,False
+ml-1m,ease-i,base,cfair_influencer_top10_push_random,Top-10,0.8994224460338542,0.8192476308418768,False,0.9627240130839279,False,False
+ml-1m,ease-u,base,cfair_influencer_push_random,C-Fair Influencer,0.8940293114726422,0.0203663788557821,True,0.2206357709376394,False,True
+ml-1m,ease-u,base,cfair_sampling_push_random,Sampling,0.9090337692833445,0.8680064787712467,False,0.9627240130839279,False,True
+ml-1m,ease-u,base,cfair_influencer_top1_push_random,Top-1,0.9061081971069994,0.2617400436271517,False,0.6675937776265352,False,True
+ml-1m,ease-u,base,cfair_influencer_top5_push_random,Top-5,0.9000325013653266,0.3680745751698137,False,0.7802203420346734,False,True
+ml-1m,ease-u,base,cfair_influencer_top10_push_random,Top-10,0.8971994047284926,0.2239863152312222,False,0.6227365809330841,False,True
+ml-1m,mf,base,cfair_influencer_push_random,C-Fair Influencer,0.8040000004894816,0.9427882540899998,False,0.9797737512884508,False,False
+ml-1m,mf,base,cfair_sampling_push_random,Sampling,0.8183535408914571,0.9526415550989246,False,0.9797737512884508,False,False
+ml-1m,mf,base,cfair_influencer_top1_push_random,Top-1,0.8166266126334575,0.8682995149564392,False,0.9627240130839279,False,False
+ml-1m,mf,base,cfair_influencer_top5_push_random,Top-5,0.7787972222192745,0.8582888476322517,False,0.9627240130839279,False,False
+ml-1m,mf,base,cfair_influencer_top10_push_random,Top-10,0.7426967936219262,0.3878417144335101,False,0.7847936868811842,False,False
+ml-1m,mf-absolute-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.7992189324227987,0.2487054237694208,False,0.6522817376646227,False,False
+ml-1m,mf-absolute-gender,fair,cfair_sampling_push_random,Sampling,0.7322904038583679,0.2385573361287613,False,0.640753175552458,False,False
+ml-1m,mf-absolute-gender,fair,cfair_influencer_top1_push_random,Top-1,0.7202793775165918,0.1812189812946089,False,0.5787504513257331,False,False
+ml-1m,mf-absolute-gender,fair,cfair_influencer_top5_push_random,Top-5,0.7410967737363572,0.2179526410050035,False,0.6227365809330841,False,False
+ml-1m,mf-absolute-gender,fair,cfair_influencer_top10_push_random,Top-10,0.7748716485528238,0.1413148396137701,False,0.5131870723278086,False,False
+ml-1m,mf-over-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.8033920105602558,0.1670042783116853,False,0.5482463681949264,False,True
+ml-1m,mf-over-gender,fair,cfair_sampling_push_random,Sampling,0.8245027974986988,0.4481759391258301,False,0.8014811799214844,False,True
+ml-1m,mf-over-gender,fair,cfair_influencer_top1_push_random,Top-1,0.7709392277388182,0.1525610599074763,False,0.5270128097677355,False,True
+ml-1m,mf-over-gender,fair,cfair_influencer_top5_push_random,Top-5,0.7660758270760162,0.0216244185536346,True,0.22670761386874982,False,True
+ml-1m,mf-over-gender,fair,cfair_influencer_top10_push_random,Top-10,0.739595264858548,0.0019520234534334,True,0.0634407622365855,False,True
+ml-1m,mf-under-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.434419136314232,0.0984311530322007,False,0.42468145335339247,False,True
+ml-1m,mf-under-gender,fair,cfair_sampling_push_random,Sampling,0.583508653067134,0.0490776825516261,True,0.3127499378289899,False,True
+ml-1m,mf-under-gender,fair,cfair_influencer_top1_push_random,Top-1,0.672535066439555,0.0157579992779079,True,0.19932958943503787,False,True
+ml-1m,mf-under-gender,fair,cfair_influencer_top5_push_random,Top-5,0.4279304962614542,0.1345305052983185,False,0.49684561615856265,False,True
+ml-1m,mf-under-gender,fair,cfair_influencer_top10_push_random,Top-10,0.7708153531028792,1.275315623892114e-05,True,0.0010361939444123425,True,True
+ml-1m,mf-value-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.8005449548230466,0.1008805543968672,False,0.42468145335339247,False,True
+ml-1m,mf-value-gender,fair,cfair_sampling_push_random,Sampling,0.7578983428934133,0.0467411373635425,True,0.3061285748794156,False,True
+ml-1m,mf-value-gender,fair,cfair_influencer_top1_push_random,Top-1,0.8041540110766436,0.181638603185307,False,0.5787504513257331,False,True
+ml-1m,mf-value-gender,fair,cfair_influencer_top5_push_random,Top-5,0.7764645970792063,0.1600166055747378,False,0.5417228834561435,False,True
+ml-1m,mf-value-gender,fair,cfair_influencer_top10_push_random,Top-10,0.7773917820541497,0.0194751719978258,True,0.21825623790666845,False,True
+ml-1m,neumf,base,cfair_influencer_push_random,C-Fair Influencer,0.8659441040184437,0.6491550681498367,False,0.8832634150390458,False,False
+ml-1m,neumf,base,cfair_sampling_push_random,Sampling,0.9023120386676574,0.8042218389862814,False,0.9627240130839279,False,False
+ml-1m,neumf,base,cfair_influencer_top1_push_random,Top-1,0.8758573174378838,0.6410579484127965,False,0.8790879039415986,False,False
+ml-1m,neumf,base,cfair_influencer_top5_push_random,Top-5,0.8714483771979314,0.4857362970200377,False,0.8014811799214844,False,False
+ml-1m,neumf,base,cfair_influencer_top10_push_random,Top-10,0.8835919353722301,0.8215012907490387,False,0.9627240130839279,False,False
+ml-1m,nmf,base,cfair_influencer_push_random,C-Fair Influencer,0.8855840656396471,0.8772756620876039,False,0.9627240130839279,False,False
+ml-1m,nmf,base,cfair_sampling_push_random,Sampling,0.8841809350523665,0.9741441263392324,False,0.9893651283132829,False,False
+ml-1m,nmf,base,cfair_influencer_top1_push_random,Top-1,0.8834348411186568,0.825746687094695,False,0.9627240130839279,False,False
+ml-1m,nmf,base,cfair_influencer_top5_push_random,Top-5,0.8849465058503435,0.95122104667924,False,0.9797737512884508,False,False
+ml-1m,nmf,base,cfair_influencer_top10_push_random,Top-10,0.8805707756987242,0.7406579544360585,False,0.9329993612082133,False,False
+ml-1m,slim-i,base,cfair_influencer_push_random,C-Fair Influencer,0.8971841127310268,0.9664898389343866,False,0.987396994283473,False,False
+ml-1m,slim-i,base,cfair_sampling_push_random,Sampling,0.8950717237323133,0.7008986971896235,False,0.9148276168137657,False,False
+ml-1m,slim-i,base,cfair_influencer_top1_push_random,Top-1,0.8922536053475798,0.9335324901925643,False,0.9797737512884508,False,False
+ml-1m,slim-i,base,cfair_influencer_top5_push_random,Top-5,0.8953570084390262,0.8531990539505132,False,0.9627240130839279,False,False
+ml-1m,slim-i,base,cfair_influencer_top10_push_random,Top-10,0.8939300210076274,0.4709526319888685,False,0.8014811799214844,False,False
+ml-1m,slim-u,base,cfair_influencer_push_random,C-Fair Influencer,0.8702484162953715,0.5866863678637345,False,0.8436861484766094,False,False
+ml-1m,slim-u,base,cfair_sampling_push_random,Sampling,0.877056696069683,0.455923608286367,False,0.8014811799214844,False,False
+ml-1m,slim-u,base,cfair_influencer_top1_push_random,Top-1,0.8779900775385817,0.9593109586134998,False,0.9835206988939665,False,False
+ml-1m,slim-u,base,cfair_influencer_top5_push_random,Top-5,0.8724107612182699,0.7614036913601407,False,0.9517546142001759,False,False
+ml-1m,slim-u,base,cfair_influencer_top10_push_random,Top-10,0.8725352041555774,0.8390297233771118,False,0.9627240130839279,False,False
+ml-1m,svd,base,cfair_influencer_push_random,C-Fair Influencer,0.7846160385956549,0.5267948079568706,False,0.8152776789808712,False,False
+ml-1m,svd,base,cfair_sampling_push_random,Sampling,0.7798079074649511,0.7435783345128248,False,0.9330616166666721,False,False
+ml-1m,svd,base,cfair_influencer_top1_push_random,Top-1,0.7996243124573138,0.9995837541527752,False,0.9995837541527752,False,False
+ml-1m,svd,base,cfair_influencer_top5_push_random,Top-5,0.7897247170691202,0.9943492680687744,False,0.9974182472912089,False,False
+ml-1m,svd,base,cfair_influencer_top10_push_random,Top-10,0.799465624993448,0.98184404069789,False,0.9909916559838953,False,False
+lastfm-1k,bnslim-u-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.8260367725054032,0.1207443120167728,False,0.4605645771310656,False,True
+lastfm-1k,bnslim-u-gender,fair,cfair_sampling_push_random,Sampling,0.8318891946447807,9.52756317966876e-05,True,0.005160763388987245,True,True
+lastfm-1k,bnslim-u-gender,fair,cfair_influencer_top1_push_random,Top-1,0.924718175950066,0.6680172375860693,False,0.8934386922447429,False,True
+lastfm-1k,bnslim-u-gender,fair,cfair_influencer_top5_push_random,Top-5,0.8872727323400466,0.627977005409568,False,0.8748961954746085,False,True
+lastfm-1k,bnslim-u-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8548619590788993,0.3984335835117317,False,0.7963378268789199,False,True
+lastfm-1k,ease-i,base,cfair_influencer_push_random,C-Fair Influencer,0.8905686414344547,0.022812597580612,True,0.23169044417809062,False,True
+lastfm-1k,ease-i,base,cfair_sampling_push_random,Sampling,0.9108480725881132,0.0165596889684493,True,0.19932958943503787,False,True
+lastfm-1k,ease-i,base,cfair_influencer_top1_push_random,Top-1,0.9925384381035828,0.5012643951890582,False,0.8014811799214844,False,True
+lastfm-1k,ease-i,base,cfair_influencer_top5_push_random,Top-5,0.9475037045815164,0.0978593038892413,False,0.42468145335339247,False,True
+lastfm-1k,ease-i,base,cfair_influencer_top10_push_random,Top-10,0.9005789952947406,0.0470967038276024,True,0.3061285748794156,False,True
+lastfm-1k,ease-u,base,cfair_influencer_push_random,C-Fair Influencer,0.8694196543444933,0.0180666995510545,True,0.2097027626461683,False,True
+lastfm-1k,ease-u,base,cfair_sampling_push_random,Sampling,0.8716626868854255,5.879831938072778e-05,True,0.0038218907597473055,True,True
+lastfm-1k,ease-u,base,cfair_influencer_top1_push_random,Top-1,0.9647277935687048,0.4967024114421572,False,0.8014811799214844,False,True
+lastfm-1k,ease-u,base,cfair_influencer_top5_push_random,Top-5,0.9299586081460416,0.3779494596239103,False,0.7823794546354831,False,True
+lastfm-1k,ease-u,base,cfair_influencer_top10_push_random,Top-10,0.8979416870935863,0.0296864477436013,True,0.26075933828838976,False,True
+lastfm-1k,mf,base,cfair_influencer_push_random,C-Fair Influencer,0.8448551899599743,0.0076014858266363,True,0.14532252315628222,False,True
+lastfm-1k,mf,base,cfair_sampling_push_random,Sampling,0.931518677100721,0.0165129109293303,True,0.19932958943503787,False,True
+lastfm-1k,mf,base,cfair_influencer_top1_push_random,Top-1,0.9490294480487952,0.2373710951086948,False,0.640753175552458,False,True
+lastfm-1k,mf,base,cfair_influencer_top5_push_random,Top-5,0.9164648737238922,0.0970695294577748,False,0.42468145335339247,False,True
+lastfm-1k,mf,base,cfair_influencer_top10_push_random,Top-10,0.899249517329014,0.133740651505837,False,0.49684561615856265,False,True
+lastfm-1k,mf-absolute-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.8151255609972987,0.0736962530018896,False,0.3943011517382275,False,True
+lastfm-1k,mf-absolute-gender,fair,cfair_sampling_push_random,Sampling,0.8828141706027278,0.0421323382821291,True,0.3061285748794156,False,True
+lastfm-1k,mf-absolute-gender,fair,cfair_influencer_top1_push_random,Top-1,0.9845160000501938,0.7235276771119653,False,0.9185409963335497,False,True
+lastfm-1k,mf-absolute-gender,fair,cfair_influencer_top5_push_random,Top-5,0.925226544735856,0.2705757692768484,False,0.671599486790086,False,True
+lastfm-1k,mf-absolute-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8805316496080349,0.2488705706781945,False,0.6522817376646227,False,True
+lastfm-1k,mf-over-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.8417768626668262,0.0990816781147562,False,0.42468145335339247,False,False
+lastfm-1k,mf-over-gender,fair,cfair_sampling_push_random,Sampling,0.9359685163108136,0.3183599274888266,False,0.7235452897473331,False,False
+lastfm-1k,mf-over-gender,fair,cfair_influencer_top1_push_random,Top-1,0.9517467505641848,0.6142545297658464,False,0.8717586121131008,False,False
+lastfm-1k,mf-over-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9159591788768788,0.3769471393638697,False,0.7823794546354831,False,False
+lastfm-1k,mf-over-gender,fair,cfair_influencer_top10_push_random,Top-10,0.9111839187044016,0.4478949143285458,False,0.8014811799214844,False,False
+lastfm-1k,mf-under-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.802916234419221,0.0285494883541049,True,0.2607166447104971,False,True
+lastfm-1k,mf-under-gender,fair,cfair_sampling_push_random,Sampling,0.8851915054673786,0.0720780049862555,False,0.3943011517382275,False,True
+lastfm-1k,mf-under-gender,fair,cfair_influencer_top1_push_random,Top-1,0.9782407967901566,0.5082713251263892,False,0.8018843721654197,False,True
+lastfm-1k,mf-under-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9195319498870812,0.2756422338049217,False,0.6786645908075724,False,True
+lastfm-1k,mf-under-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8741314776094952,0.2060125152619624,False,0.6142574996342915,False,True
+lastfm-1k,mf-value-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.7984763254530146,0.0252067717541727,True,0.24824850970018567,False,True
+lastfm-1k,mf-value-gender,fair,cfair_sampling_push_random,Sampling,0.8756046249092192,0.0571900825548525,False,0.34419957093198267,False,True
+lastfm-1k,mf-value-gender,fair,cfair_influencer_top1_push_random,Top-1,0.9701237285396882,0.6283376719642386,False,0.8748961954746085,False,True
+lastfm-1k,mf-value-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9114026906082052,0.3628377460016827,False,0.7802203420346734,False,True
+lastfm-1k,mf-value-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8776378861311082,0.0618711171372432,False,0.36306228894138876,False,True
+lastfm-1k,neumf,base,cfair_influencer_push_random,C-Fair Influencer,1.0608560657118142,0.9691681266967012,False,0.987396994283473,False,False
+lastfm-1k,neumf,base,cfair_sampling_push_random,Sampling,0.6851331037197003,0.6265485581173635,False,0.8748961954746085,False,False
+lastfm-1k,neumf,base,cfair_influencer_top1_push_random,Top-1,0.8347003559092977,0.4263381036560515,False,0.8014811799214844,False,False
+lastfm-1k,neumf,base,cfair_influencer_top5_push_random,Top-5,0.7641866288073366,0.8544226820057697,False,0.9627240130839279,False,False
+lastfm-1k,neumf,base,cfair_influencer_top10_push_random,Top-10,1.0001706382137765,0.8810406070683214,False,0.9627240130839279,False,False
+lastfm-1k,nmf,base,cfair_influencer_push_random,C-Fair Influencer,0.8798026072257797,0.2814514295892415,False,0.6826247359440559,False,False
+lastfm-1k,nmf,base,cfair_sampling_push_random,Sampling,0.943303125360039,0.4469229916392318,False,0.8014811799214844,False,False
+lastfm-1k,nmf,base,cfair_influencer_top1_push_random,Top-1,1.0357239797495454,0.8264110367922706,False,0.9627240130839279,False,False
+lastfm-1k,nmf,base,cfair_influencer_top5_push_random,Top-5,0.9637677774665884,0.467141378340243,False,0.8014811799214844,False,False
+lastfm-1k,nmf,base,cfair_influencer_top10_push_random,Top-10,0.8895879491507034,0.5432184047673524,False,0.824981222193409,False,False
+lastfm-1k,slim-i,base,cfair_influencer_push_random,C-Fair Influencer,0.8876638543205877,0.4631054879520996,False,0.8014811799214844,False,True
+lastfm-1k,slim-i,base,cfair_sampling_push_random,Sampling,0.8989076119574708,0.0131753725851976,True,0.19463618591769183,False,True
+lastfm-1k,slim-i,base,cfair_influencer_top1_push_random,Top-1,0.9926667473919242,0.6985217300130107,False,0.9148276168137657,False,True
+lastfm-1k,slim-i,base,cfair_influencer_top5_push_random,Top-5,0.9537331130231133,0.5166218182020397,False,0.8072215909406869,False,True
+lastfm-1k,slim-i,base,cfair_influencer_top10_push_random,Top-10,0.9066658543827986,0.1136933502617473,False,0.4561304228186784,False,True
+lastfm-1k,slim-u,base,cfair_influencer_push_random,C-Fair Influencer,0.8234689501422081,0.094252669285592,False,0.42468145335339247,False,True
+lastfm-1k,slim-u,base,cfair_sampling_push_random,Sampling,0.8307987992661737,0.0003690180595507,True,0.0171329813362825,True,True
+lastfm-1k,slim-u,base,cfair_influencer_top1_push_random,Top-1,0.9277725527202776,0.9498833835436802,False,0.9797737512884508,False,True
+lastfm-1k,slim-u,base,cfair_influencer_top5_push_random,Top-5,0.8889512386805735,0.9308923755517386,False,0.9797737512884508,False,True
+lastfm-1k,slim-u,base,cfair_influencer_top10_push_random,Top-10,0.8534149213616975,0.4932689312292103,False,0.8014811799214844,False,True
+lastfm-1k,svd,base,cfair_influencer_push_random,C-Fair Influencer,0.9545087766837876,0.5202110487515083,False,0.8089406260489961,False,False
+lastfm-1k,svd,base,cfair_sampling_push_random,Sampling,0.9616279927018706,0.581319174984604,False,0.8436861484766094,False,False
+lastfm-1k,svd,base,cfair_influencer_top1_push_random,Top-1,0.9952097207097412,0.8986980460547837,False,0.9768457022334605,False,False
+lastfm-1k,svd,base,cfair_influencer_top5_push_random,Top-5,0.9446592148894912,0.2221827140707077,False,0.6227365809330841,False,False
+lastfm-1k,svd,base,cfair_influencer_top10_push_random,Top-10,0.954449771729104,0.3167295870589403,False,0.7235452897473331,False,False
+ftky,bnslim-u-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.7660191302223917,9.102552452481488e-12,True,1.4791647735282417e-09,True,True
+ftky,bnslim-u-gender,fair,cfair_sampling_push_random,Sampling,0.9070490604541864,0.0017179184070784,True,0.06203594247783111,False,True
+ftky,bnslim-u-gender,fair,cfair_influencer_top1_push_random,Top-1,0.9504865707258692,0.4616528186478772,False,0.8014811799214844,False,True
+ftky,bnslim-u-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9357381953996932,0.1503844669545008,False,0.5255371157012124,False,True
+ftky,bnslim-u-gender,fair,cfair_influencer_top10_push_random,Top-10,0.917571762196691,0.0455180506548945,True,0.3061285748794156,False,True
+ftky,ease-i,base,cfair_influencer_push_random,C-Fair Influencer,0.923982416628052,0.0413167588308455,True,0.3061285748794156,False,True
+ftky,ease-i,base,cfair_sampling_push_random,Sampling,0.9554858251556408,0.786504445323162,False,0.9609417848005137,False,True
+ftky,ease-i,base,cfair_influencer_top1_push_random,Top-1,0.9658910024472078,0.9441648957823972,False,0.9797737512884508,False,True
+ftky,ease-i,base,cfair_influencer_top5_push_random,Top-5,0.9498638282109452,0.4866459248945847,False,0.8014811799214844,False,True
+ftky,ease-i,base,cfair_influencer_top10_push_random,Top-10,0.9489555447874526,0.7213620184925237,False,0.9185409963335497,False,True
+ftky,ease-u,base,cfair_influencer_push_random,C-Fair Influencer,0.9773825868259076,0.9795292763279096,False,0.9909916559838953,False,False
+ftky,ease-u,base,cfair_sampling_push_random,Sampling,0.9756229444745536,0.8314917625033782,False,0.9627240130839279,False,False
+ftky,ease-u,base,cfair_influencer_top1_push_random,Top-1,0.976754769085984,0.9074480222630018,False,0.9771100975776238,False,False
+ftky,ease-u,base,cfair_influencer_top5_push_random,Top-5,0.970164273673868,0.945242697231276,False,0.9797737512884508,False,False
+ftky,ease-u,base,cfair_influencer_top10_push_random,Top-10,0.9700083763543644,0.6859239852370944,False,0.9098991640900231,False,False
+ftky,mf,base,cfair_influencer_push_random,C-Fair Influencer,0.9455201496875308,0.2159570125856628,False,0.6227365809330841,False,False
+ftky,mf,base,cfair_sampling_push_random,Sampling,0.9651018721811948,0.4697332396604086,False,0.8014811799214844,False,False
+ftky,mf,base,cfair_influencer_top1_push_random,Top-1,0.97729640586162,0.4919174647115509,False,0.8014811799214844,False,False
+ftky,mf,base,cfair_influencer_top5_push_random,Top-5,0.9647119689364962,0.2628462376305785,False,0.6675937776265352,False,False
+ftky,mf,base,cfair_influencer_top10_push_random,Top-10,0.9322899553755328,0.19150114014525,False,0.5962613467107316,False,False
+ftky,mf-absolute-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.8103198524260471,0.0008586733867777,True,0.03488360633784406,True,True
+ftky,mf-absolute-gender,fair,cfair_sampling_push_random,Sampling,0.8194131846664915,0.0129844716065119,True,0.19463618591769183,False,True
+ftky,mf-absolute-gender,fair,cfair_influencer_top1_push_random,Top-1,0.8579142637955453,0.007579156327731,True,0.14532252315628222,False,True
+ftky,mf-absolute-gender,fair,cfair_influencer_top5_push_random,Top-5,0.828273973317794,0.0024479909990764,True,0.06629975622498584,False,True
+ftky,mf-absolute-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8547796780048369,0.0571273762171554,False,0.34419957093198267,False,True
+ftky,mf-over-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.941659516807868,0.2895803598670766,False,0.6906307164057479,False,False
+ftky,mf-over-gender,fair,cfair_sampling_push_random,Sampling,0.9639643749842062,0.4514386565305021,False,0.8014811799214844,False,False
+ftky,mf-over-gender,fair,cfair_influencer_top1_push_random,Top-1,0.9763540239833096,0.4213746271709814,False,0.8014811799214844,False,False
+ftky,mf-over-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9217333050160236,0.1540498982397996,False,0.5270128097677355,False,False
+ftky,mf-over-gender,fair,cfair_influencer_top10_push_random,Top-10,0.934331849878899,0.165675495644262,False,0.5482463681949264,False,False
+ftky,mf-under-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.8434033624517028,0.0920286485969724,False,0.42468145335339247,False,False
+ftky,mf-under-gender,fair,cfair_sampling_push_random,Sampling,0.8337578312494379,0.087896928587755,False,0.42468145335339247,False,False
+ftky,mf-under-gender,fair,cfair_influencer_top1_push_random,Top-1,0.8732799903034733,0.3663818548392857,False,0.7802203420346734,False,False
+ftky,mf-under-gender,fair,cfair_influencer_top5_push_random,Top-5,0.8791876285657808,0.7974400989480044,False,0.9609417848005137,False,False
+ftky,mf-under-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8988994475549911,0.9196695020494404,False,0.9797737512884508,False,False
+ftky,mf-value-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.8483917898739144,0.0288793821833166,True,0.2607166447104971,False,True
+ftky,mf-value-gender,fair,cfair_sampling_push_random,Sampling,0.840062568899552,0.0357192171520652,True,0.29766014293387666,False,True
+ftky,mf-value-gender,fair,cfair_influencer_top1_push_random,Top-1,0.8934914442442253,0.1218724727177589,False,0.4605645771310656,False,True
+ftky,mf-value-gender,fair,cfair_influencer_top5_push_random,Top-5,0.8812074838062771,0.0998274546297569,False,0.42468145335339247,False,True
+ftky,mf-value-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8894022338329647,0.1061986906641645,False,0.4363639446878058,False,True
+ftky,neumf,base,cfair_influencer_push_random,C-Fair Influencer,0.9219346525108432,0.4069193772730853,False,0.8014811799214844,False,False
+ftky,neumf,base,cfair_sampling_push_random,Sampling,0.8917162708674483,0.0793534695388543,False,0.4093631365099627,False,False
+ftky,neumf,base,cfair_influencer_top1_push_random,Top-1,0.95623098593124,0.4157035742899917,False,0.8014811799214844,False,False
+ftky,neumf,base,cfair_influencer_top5_push_random,Top-5,0.9445776200929096,0.5062057279244561,False,0.8018843721654197,False,False
+ftky,neumf,base,cfair_influencer_top10_push_random,Top-10,0.8951350928490894,0.1491630681328885,False,0.5255371157012124,False,False
+ftky,nmf,base,cfair_influencer_push_random,C-Fair Influencer,0.8447295372811666,0.9451537842345982,False,0.9797737512884508,False,False
+ftky,nmf,base,cfair_sampling_push_random,Sampling,0.8444940095127452,0.9854687856308442,False,0.9915707595356792,False,False
+ftky,nmf,base,cfair_influencer_top1_push_random,Top-1,0.8547058595762944,0.4104420469897307,False,0.8014811799214844,False,False
+ftky,nmf,base,cfair_influencer_top5_push_random,Top-5,0.8444901445562591,0.423868676996106,False,0.8014811799214844,False,False
+ftky,nmf,base,cfair_influencer_top10_push_random,Top-10,0.8444714568738095,0.4407682410923038,False,0.8014811799214844,False,False
+ftky,slim-i,base,cfair_influencer_push_random,C-Fair Influencer,0.9696271927569604,0.8268001933538871,False,0.9627240130839279,False,False
+ftky,slim-i,base,cfair_sampling_push_random,Sampling,0.9662193939135718,0.1757378256239817,False,0.5711479332779406,False,False
+ftky,slim-i,base,cfair_influencer_top1_push_random,Top-1,0.967975469361434,0.3619815529658984,False,0.7802203420346734,False,False
+ftky,slim-i,base,cfair_influencer_top5_push_random,Top-5,0.9657998794866586,0.7799725632944565,False,0.9565701247950882,False,False
+ftky,slim-i,base,cfair_influencer_top10_push_random,Top-10,0.9667799634333694,0.5414565334063278,False,0.824981222193409,False,False
+ftky,slim-u,base,cfair_influencer_push_random,C-Fair Influencer,0.7847848946893804,2.919328449873806e-15,True,9.48781746208987e-13,True,True
+ftky,slim-u,base,cfair_sampling_push_random,Sampling,0.9104136908427654,9.034521115381372e-06,True,0.0009787397874996486,True,True
+ftky,slim-u,base,cfair_influencer_top1_push_random,Top-1,0.9460747409637856,0.1150852143727127,False,0.4561304228186784,False,True
+ftky,slim-u,base,cfair_influencer_top5_push_random,Top-5,0.934547178314432,0.1630554749393507,False,0.546319890260711,False,True
+ftky,slim-u,base,cfair_influencer_top10_push_random,Top-10,0.923306479017664,0.2238649331698302,False,0.6227365809330841,False,True
+ftky,svd,base,cfair_influencer_push_random,C-Fair Influencer,0.948221730567246,0.2867443803704584,False,0.6903105453362888,False,True
+ftky,svd,base,cfair_sampling_push_random,Sampling,0.950695094816968,0.03949971519883,True,0.3061285748794156,False,True
+ftky,svd,base,cfair_influencer_top1_push_random,Top-1,0.9644182706928404,0.8573099052426345,False,0.9627240130839279,False,True
+ftky,svd,base,cfair_influencer_top5_push_random,Top-5,0.947141158346906,0.4738716128783479,False,0.8014811799214844,False,True
+ftky,svd,base,cfair_influencer_top10_push_random,Top-10,0.9493213150818413,0.3064985500641102,False,0.7115144912202559,False,True
+fnyc,bnslim-u-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.9119248049833466,0.2662516384081602,False,0.6707890114934268,False,True
+fnyc,bnslim-u-gender,fair,cfair_sampling_push_random,Sampling,0.9289622262945088,0.0459398331331191,True,0.3061285748794156,False,True
+fnyc,bnslim-u-gender,fair,cfair_influencer_top1_push_random,Top-1,0.9807153292857304,0.9492734808968508,False,0.9797737512884508,False,True
+fnyc,bnslim-u-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9744972789875268,0.3852476504406533,False,0.7847936868811842,False,True
+fnyc,bnslim-u-gender,fair,cfair_influencer_top10_push_random,Top-10,0.9745284194504996,0.7961493633096062,False,0.9609417848005137,False,True
+fnyc,ease-i,base,cfair_influencer_push_random,C-Fair Influencer,0.8759013930085479,0.0271908262418639,True,0.2599123096648755,False,True
+fnyc,ease-i,base,cfair_sampling_push_random,Sampling,0.9278659337942402,0.4649571403119858,False,0.8014811799214844,False,True
+fnyc,ease-i,base,cfair_influencer_top1_push_random,Top-1,0.93976661400981,0.552068444984894,False,0.8271430566726685,False,True
+fnyc,ease-i,base,cfair_influencer_top5_push_random,Top-5,0.9336155510652348,0.2055492558121652,False,0.6142574996342915,False,True
+fnyc,ease-i,base,cfair_influencer_top10_push_random,Top-10,0.9431514886565616,0.5808519351003517,False,0.8436861484766094,False,True
+fnyc,ease-u,base,cfair_influencer_push_random,C-Fair Influencer,0.8095394038244625,0.1074126633077676,False,0.4363639446878058,False,False
+fnyc,ease-u,base,cfair_sampling_push_random,Sampling,0.8467182649844792,0.3057101630139214,False,0.7115144912202559,False,False
+fnyc,ease-u,base,cfair_influencer_top1_push_random,Top-1,0.8663741519083554,0.24353264245567,False,0.6487549901483012,False,False
+fnyc,ease-u,base,cfair_influencer_top5_push_random,Top-5,0.8652590351979159,0.6522560603365262,False,0.8832634150390458,False,False
+fnyc,ease-u,base,cfair_influencer_top10_push_random,Top-10,0.8512021485352358,0.5546209912376967,False,0.8271430566726685,False,False
+fnyc,mf,base,cfair_influencer_push_random,C-Fair Influencer,0.8799997445782196,0.5338191256796395,False,0.8183547917258625,False,False
+fnyc,mf,base,cfair_sampling_push_random,Sampling,0.855869252064366,0.4751008806709504,False,0.8014811799214844,False,False
+fnyc,mf,base,cfair_influencer_top1_push_random,Top-1,0.8864531388989699,0.4442436041435777,False,0.8014811799214844,False,False
+fnyc,mf,base,cfair_influencer_top5_push_random,Top-5,0.9785534700456072,0.7718723416200952,False,0.9538346426864295,False,False
+fnyc,mf,base,cfair_influencer_top10_push_random,Top-10,0.9802055407349024,0.8749075461541536,False,0.9627240130839279,False,False
+fnyc,mf-absolute-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.7592657036817225,0.0088564445817465,True,0.1599080271704229,False,True
+fnyc,mf-absolute-gender,fair,cfair_sampling_push_random,Sampling,0.8567423934805132,0.0832115952505779,False,0.4225588821318409,False,True
+fnyc,mf-absolute-gender,fair,cfair_influencer_top1_push_random,Top-1,0.7272617144172725,0.0022992727356843,True,0.06629975622498584,False,True
+fnyc,mf-absolute-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9107083897421376,0.0919335503105468,False,0.42468145335339247,False,True
+fnyc,mf-absolute-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8231415156696879,0.0457756137247231,True,0.3061285748794156,False,True
+fnyc,mf-over-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.8730335632242365,0.3508187113102339,False,0.7703789268636893,False,False
+fnyc,mf-over-gender,fair,cfair_sampling_push_random,Sampling,0.8660496660660698,0.3731543604273171,False,0.7823794546354831,False,False
+fnyc,mf-over-gender,fair,cfair_influencer_top1_push_random,Top-1,0.8946513733084938,0.4018443187942857,False,0.7963378268789199,False,False
+fnyc,mf-over-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9835344282982216,0.5741657797160745,False,0.8436861484766094,False,False
+fnyc,mf-over-gender,fair,cfair_influencer_top10_push_random,Top-10,0.9688504172296352,0.4859712342659439,False,0.8014811799214844,False,False
+fnyc,mf-under-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.7597483579621679,0.2003125128545884,False,0.6084258568013199,False,False
+fnyc,mf-under-gender,fair,cfair_sampling_push_random,Sampling,0.8536909810138397,0.4430083707436399,False,0.8014811799214844,False,False
+fnyc,mf-under-gender,fair,cfair_influencer_top1_push_random,Top-1,0.728820705154155,0.0724533134568969,False,0.3943011517382275,False,False
+fnyc,mf-under-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9118424834090574,0.7230423651781468,False,0.9185409963335497,False,False
+fnyc,mf-under-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8352273837881434,0.3262921635430922,False,0.7313445044931377,False,False
+fnyc,mf-value-gender,fair,cfair_influencer_push_random,C-Fair Influencer,0.7584553464091308,0.1947401860756054,False,0.5970807591940732,False,False
+fnyc,mf-value-gender,fair,cfair_sampling_push_random,Sampling,0.8558754358864279,0.6302422228349225,False,0.8748961954746085,False,False
+fnyc,mf-value-gender,fair,cfair_influencer_top1_push_random,Top-1,0.726096091491434,0.1018954315106487,False,0.42468145335339247,False,False
+fnyc,mf-value-gender,fair,cfair_influencer_top5_push_random,Top-5,0.9197420668668242,0.8609641107599668,False,0.9627240130839279,False,False
+fnyc,mf-value-gender,fair,cfair_influencer_top10_push_random,Top-10,0.8335717265074747,0.5465084987285014,False,0.8261174980779672,False,False
+fnyc,neumf,base,cfair_influencer_push_random,C-Fair Influencer,1.0089558298721453,0.7227820052949853,False,0.9185409963335497,False,False
+fnyc,neumf,base,cfair_sampling_push_random,Sampling,0.9211737211407433,0.7983208673727344,False,0.9609417848005137,False,False
+fnyc,neumf,base,cfair_influencer_top1_push_random,Top-1,0.925187479354278,0.401547425351961,False,0.7963378268789199,False,False
+fnyc,neumf,base,cfair_influencer_top5_push_random,Top-5,0.860228010535446,0.3214449107815312,False,0.725483305583317,False,False
+fnyc,neumf,base,cfair_influencer_top10_push_random,Top-10,0.8234881967752501,0.221796646081436,False,0.6227365809330841,False,False
+fnyc,nmf,base,cfair_influencer_push_random,C-Fair Influencer,0.7649164474931278,0.0705675100260057,False,0.3943011517382275,False,False
+fnyc,nmf,base,cfair_sampling_push_random,Sampling,0.91159959187633,0.6716790707752913,False,0.8946545000080725,False,False
+fnyc,nmf,base,cfair_influencer_top1_push_random,Top-1,0.8996764833675496,0.1487084721586021,False,0.5255371157012124,False,False
+fnyc,nmf,base,cfair_influencer_top5_push_random,Top-5,0.8731183868310176,0.4941111324687554,False,0.8014811799214844,False,False
+fnyc,nmf,base,cfair_influencer_top10_push_random,Top-10,0.9604874722596156,0.6896954982063874,False,0.9111830768986826,False,False
+fnyc,slim-i,base,cfair_influencer_push_random,C-Fair Influencer,1.0058638532735946,0.7686430016179118,False,0.9534693722359593,False,False
+fnyc,slim-i,base,cfair_sampling_push_random,Sampling,1.0051752968456524,0.8827438643046477,False,0.9627240130839279,False,False
+fnyc,slim-i,base,cfair_influencer_top1_push_random,Top-1,1.0211152882210364,0.9418452592537896,False,0.9797737512884508,False,False
+fnyc,slim-i,base,cfair_influencer_top5_push_random,Top-5,0.9930618043902972,0.8534954339885825,False,0.9627240130839279,False,False
+fnyc,slim-i,base,cfair_influencer_top10_push_random,Top-10,1.0158839758678908,0.9109672602031386,False,0.9771100975776238,False,False
+fnyc,slim-u,base,cfair_influencer_push_random,C-Fair Influencer,0.9102715145857148,0.0393580004197197,True,0.3061285748794156,False,True
+fnyc,slim-u,base,cfair_sampling_push_random,Sampling,0.9299272631143536,0.0116857392087785,True,0.18989326214265062,False,True
+fnyc,slim-u,base,cfair_influencer_top1_push_random,Top-1,0.9916362879967562,0.8512043700245584,False,0.9627240130839279,False,True
+fnyc,slim-u,base,cfair_influencer_top5_push_random,Top-5,0.9903041860319522,0.4786767247254231,False,0.8014811799214844,False,True
+fnyc,slim-u,base,cfair_influencer_top10_push_random,Top-10,0.9875491853710804,0.8700922461918772,False,0.9627240130839279,False,True
+fnyc,svd,base,cfair_influencer_push_random,C-Fair Influencer,0.9504456148857086,0.9080452445692306,False,0.9771100975776238,False,False
+fnyc,svd,base,cfair_sampling_push_random,Sampling,0.9346747054789458,0.2360363691856435,False,0.640753175552458,False,False
+fnyc,svd,base,cfair_influencer_top1_push_random,Top-1,0.958724102282923,0.7069950234732705,False,0.9185409963335497,False,False
+fnyc,svd,base,cfair_influencer_top5_push_random,Top-5,0.9650118187717248,0.9161280642238954,False,0.9794132265551514,False,False
+fnyc,svd,base,cfair_influencer_top10_push_random,Top-10,0.9261723397722064,0.8787905504768376,False,0.9627240130839279,False,False

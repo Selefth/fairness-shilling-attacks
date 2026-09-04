@@ -1,0 +1,394 @@
+\begin{figure*}
+\centering
+\begin{tikzpicture}
+[scale=0.95, transform shape]
+\begin{groupplot}[
+    group style={
+        group size=3 by 3,
+        horizontal sep=1.0cm,
+        vertical sep=0.3cm,
+    },
+    width=5.0cm,
+    height=3.7cm,
+    xtick={0,10,25,50,75,100},
+    xticklabels={0,10,25,50,75,100},
+    xticklabel style={font=\footnotesize},
+    yticklabel style={font=\footnotesize},
+    ymin=0, ymax=1.3,
+]
+% ===================== Row 1: ML100K =====================
+\nextgroupplot[
+    title={\textsc{PushR}},
+    ylabel={ML100K},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.915806446771518
+10 0.909499937744034
+25 0.919298307427607
+50 0.916937193807804
+75 0.920734718949913
+100 0.91558136701383
+};
+\addplot[easeu] table {
+0 0.898655607162843
+10 0.904509845610892
+25 0.909917007236402
+50 0.892864713928657
+75 0.906217422908185
+100 0.895327318058509
+};
+\addplot[slimi] table {
+0 0.89963209792256
+10 0.885135189250682
+25 0.88327916958852
+50 0.883161245684663
+75 0.881475723679573
+100 0.887735308070568
+};
+\addplot[easei] table {
+0 0.868930962280957
+10 0.86440245645422
+25 0.86687314702585
+50 0.871422789896626
+75 0.86531466862203
+100 0.870175264680353
+};
+\nextgroupplot[
+    title={\textsc{PushLF}},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.915806446771518
+10 0.910253232412018
+25 0.910388778912912
+50 0.913360235705732
+75 0.91251490821466
+100 0.910380661266982
+};
+\addplot[easeu] table {
+0 0.898655607162843
+10 0.912358590372116
+25 0.913065350937007
+50 0.915463313561497
+75 0.915488230281421
+100 0.915488230281421
+};
+\addplot[slimi] table {
+0 0.89963209792256
+10 0.882270345696705
+25 0.890193318405634
+50 0.892685610633689
+75 0.892273682367088
+100 0.89145719703859
+};
+\addplot[easei] table {
+0 0.868930962280957
+10 0.879118456300377
+25 0.880904497746062
+50 0.880431706749617
+75 0.880384092323566
+100 0.879055402713632
+};
+\nextgroupplot[
+    title={\textsc{NukeF}},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.915806446771518
+10 0.92601424371788
+25 0.931351560448512
+50 0.933551584364775
+75 0.931489961090755
+100 0.932021383162707
+};
+\addplot[easeu] table {
+0 0.898655607162843
+10 0.895888883756638
+25 0.895076298838802
+50 0.895200813631669
+75 0.895239685654233
+100 0.895730924890161
+};
+\addplot[slimi] table {
+0 0.89963209792256
+10 0.883851958622319
+25 0.885885579981274
+50 0.882902589922353
+75 0.880708048546841
+100 0.880825388051501
+};
+\addplot[easei] table {
+0 0.868930962280957
+10 0.869535466176376
+25 0.870679167801895
+50 0.870254810706313
+75 0.870194093801438
+100 0.869733119428107
+};
+% ===================== Row 2: ML1M =====================
+\nextgroupplot[
+    ylabel={ML1M},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.833632253770142
+10 0.837459515673377
+25 0.837367592575148
+50 0.83657507622905
+75 0.83673404629024
+100 0.836908861778042
+};
+\addplot[easeu] table {
+0 0.886562213431195
+10 0.890549293613441
+25 0.891604788268449
+50 0.892467906092749
+75 0.892935183939451
+100 0.894734473837481
+};
+\addplot[slimi] table {
+0 0.821325074679476
+10 0.825860646315549
+25 0.824135291886893
+50 0.824237617863687
+75 0.823370311091056
+100 0.82299576744306
+};
+\addplot[easei] table {
+0 0.827118226900761
+10 0.824616345436719
+25 0.825766687569746
+50 0.827359591001703
+75 0.826374906058631
+100 0.825433378649794
+};
+\nextgroupplot[
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.833632253770142
+10 0.838136149220061
+25 0.836450145563816
+50 0.837432591598865
+75 0.838449298586557
+100 0.838167524912535
+};
+\addplot[easeu] table {
+0 0.886562213431195
+10 0.887553505058953
+25 0.889985101801915
+50 0.889588015182215
+75 0.889499507661313
+100 0.889596752353473
+};
+\addplot[slimi] table {
+0 0.821325074679476
+10 0.829484127275805
+25 0.828093446226504
+50 0.827071223384974
+75 0.826652122885331
+100 0.826718019120078
+};
+\addplot[easei] table {
+0 0.827118226900761
+10 0.822423091222085
+25 0.823045811749594
+50 0.823231637771921
+75 0.823216907300417
+100 0.823247769292908
+};
+\nextgroupplot[
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.833632253770142
+10 0.835373415440382
+25 0.83652726047816
+50 0.836174693144808
+75 0.836440082271276
+100 0.836803129549077
+};
+\addplot[easeu] table {
+0 0.886562213431195
+10 0.889638089346024
+25 0.890486857219121
+50 0.890828715588886
+75 0.890726383565256
+100 0.89078924976235
+};
+\addplot[slimi] table {
+0 0.821325074679476
+10 0.825422790628998
+25 0.825826792476932
+50 0.825324428728986
+75 0.825038978523376
+100 0.824909315906159
+};
+\addplot[easei] table {
+0 0.827118226900761
+10 0.830520541125219
+25 0.829233881437832
+50 0.829926360331675
+75 0.829921367458386
+100 0.830316601564318
+};
+% ===================== Row 3: LFM1K =====================
+\nextgroupplot[
+    ylabel={LFM1K},
+    xlabel={Budget (\%)},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top
+]
+\addplot[slimu] table {
+0 0.774503426705148
+10 0.777702275823869
+25 0.778176509987711
+50 0.778036204460586
+75 0.778474185338068
+100 0.77998549477234
+};
+\addplot[easeu] table {
+0 0.791223311600103
+10 0.775566566832809
+25 0.777575352108777
+50 0.780530766389402
+75 0.77768972542124
+100 0.78024493027759
+};
+\addplot[slimi] table {
+0 0.834602968328999
+10 0.808341788403112
+25 0.805756099044766
+50 0.801392129210692
+75 0.798914093426556
+100 0.798816878169131
+};
+\addplot[easei] table {
+0 0.778740687444343
+10 0.786020187927424
+25 0.786188583790442
+50 0.783866019424648
+75 0.787369692719528
+100 0.785736004598617
+};
+\nextgroupplot[
+    xlabel={Budget (\%)},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    legend columns=4,
+    legend cell align=left,
+    legend style={
+        font=\footnotesize,
+        at={(0.5,-0.55)},
+        anchor=north,
+        draw=none,
+        column sep=0.08cm,
+        inner xsep=1pt,
+        inner ysep=1pt,
+        nodes={inner sep=0pt, outer sep=0pt},
+    }
+]
+\addplot[slimu] table {
+0 0.774503426705148
+10 0.778824438740339
+25 0.77888556798217
+50 0.780191251285429
+75 0.779163176343049
+100 0.779109268003037
+};
+\addplot[easeu] table {
+0 0.791223311600103
+10 0.776670457271403
+25 0.777492457967244
+50 0.778316200459792
+75 0.778316200459792
+100 0.778316200459792
+};
+\addplot[slimi] table {
+0 0.834602968328999
+10 0.807491390250993
+25 0.806993270397596
+50 0.800969024577466
+75 0.800834644086755
+100 0.80070064296652
+};
+\addplot[easei] table {
+0 0.778740687444343
+10 0.78407643028759
+25 0.78407643028759
+50 0.78407643028759
+75 0.78407643028759
+100 0.78407643028759
+};
+\addlegendimage{slimu}
+\addlegendentry{SLIM-u}
+\addlegendimage{easeu}
+\addlegendentry{EASE-u}
+\addlegendimage{slimi}
+\addlegendentry{SLIM-i}
+\addlegendimage{easei}
+\addlegendentry{EASE-i}
+\nextgroupplot[
+    xlabel={Budget (\%)},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top
+]
+\addplot[slimu] table {
+0 0.774503426705148
+10 0.77486210754022
+25 0.77486210754022
+50 0.775255993630572
+75 0.775255993630572
+100 0.775255993630572
+};
+\addplot[easeu] table {
+0 0.791223311600103
+10 0.790020777382376
+25 0.790020777382376
+50 0.790020777382376
+75 0.790020777382376
+100 0.790020777382376
+};
+\addplot[slimi] table {
+0 0.834602968328999
+10 0.83903960454166
+25 0.84301004424921
+50 0.841946662607709
+75 0.840615986544908
+100 0.840472364279166
+};
+\addplot[easei] table {
+0 0.778740687444343
+10 0.776873982057673
+25 0.776873982057673
+50 0.776873982057673
+75 0.776873982057673
+100 0.776873982057673
+};
+\end{groupplot}
+\end{tikzpicture}
+\caption[C-Fair Favorite and ReverseFavorite Attacks on age against neighborhood-based conventional recommenders]{C-Fair Favorite and ReverseFavorite Attacks on age against neighborhood-based conventional recommenders. The benefit ratio $\gamma$ is shown for each model across datasets, attack budgets, and attack strategies (\textsc{PushR}, \textsc{PushLF}, and \textsc{NukeF}). \textsc{PushR} and \textsc{PushLF} are shown in their \textsc{Favorite} variant and \textsc{NukeF} in its \textsc{ReverseFavorite} variant.}
+\label{fig:gamma_neighborhood_based_conventional_datasets_favorite_age}
+\end{figure*}

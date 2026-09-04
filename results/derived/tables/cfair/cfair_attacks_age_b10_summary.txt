@@ -1,0 +1,40 @@
+[C-fair/age] model-wise tests: 234
+  uncorrected p<0.05: 70 (29.9%)   [chance expectation under the null: 11.7]
+  BH-significant:       41 (17.5%)
+  smallest BH-adjusted p: 1.77e-06
+  Conventional    n=144  uncorrected=28  BH=13
+  Fairness-aware  n=90   uncorrected=42  BH=28
+
+Threshold crossings (gamma < 0.8 after injection; induced = at or above it before):
+  dataset  attack                   conventional        fairness-aware
+  ML100K   Influencer-PushR         2/8 (2 induced)     4/5 (4 induced)
+  ML100K   Influencer-PushLF        1/8 (1 induced)     4/5 (4 induced)
+  ML100K   Influencer-NukeF         1/8 (1 induced)     3/5 (3 induced)
+  ML100K   Favorite-PushR           1/8 (1 induced)     4/5 (4 induced)
+  ML100K   Favorite-PushLF          1/8 (1 induced)     4/5 (4 induced)
+  ML100K   ReverseFavorite-NukeF    1/8 (1 induced)     4/5 (4 induced)
+  ML1M     Influencer-PushR         2/8 (1 induced)     4/5 (1 induced)
+  ML1M     Influencer-PushLF        2/8 (1 induced)     4/5 (1 induced)
+  ML1M     Influencer-NukeF         2/8 (1 induced)     4/5 (1 induced)
+  ML1M     Favorite-PushR           2/8 (1 induced)     4/5 (1 induced)
+  ML1M     Favorite-PushLF          2/8 (1 induced)     4/5 (1 induced)
+  ML1M     ReverseFavorite-NukeF    2/8 (1 induced)     4/5 (1 induced)
+  LFM1K    Influencer-PushR         6/8 (3 induced)     5/5 (4 induced)
+  LFM1K    Influencer-PushLF        6/8 (3 induced)     5/5 (4 induced)
+  LFM1K    Influencer-NukeF         5/8 (2 induced)     1/5 (0 induced)
+  LFM1K    Favorite-PushR           4/8 (1 induced)     5/5 (4 induced)
+  LFM1K    Favorite-PushLF          5/8 (2 induced)     5/5 (4 induced)
+  LFM1K    ReverseFavorite-NukeF    3/8 (0 induced)     1/5 (0 induced)
+  total                             48/144 (24 induced) 69/90 (45 induced)
+
+Pre-attack state (no injection):
+  dataset  conventional           below   fairness-aware         below  
+  ML100K   [0.87, 1.00]           0/8     [0.81, 1.09]           0/5    
+  ML1M     [0.76, 0.89]           1/8     [0.54, 0.86]           3/5    
+  LFM1K    [0.77, 0.90]           4/8     [0.77, 0.98]           1/5    
+
+Group-assignment audit:
+  The fairness intervention of these models has reversed the pre-attack
+  disparity. They keep their conventional counterpart's group split, so
+  their gamma reads privileged over unprivileged benefit:
+    ML100K  mf-under-age         gamma = 1.093, unprivileged = y (ndcg_y=0.0430, ndcg_o=0.0393)

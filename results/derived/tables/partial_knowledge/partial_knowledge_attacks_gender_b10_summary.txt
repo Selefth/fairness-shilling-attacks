@@ -1,0 +1,16 @@
+[partial knowledge]
+  source: results/other_experiments/partial_knowledge/table_values.csv
+  budget: 0.1
+  model-wise tests: 325
+  uncorrected p<0.05: 51
+  BH-significant across all tests: 8
+  selected model--dataset pairs: 27
+  selected rows by dataset:
+    ML100K: 4
+    ML1M: 4
+    LFM1K: 9
+    FTKY: 6
+    FNYC: 4
+
+The LaTeX table uses uncorrected p-values for row selection and stars.
+The BH values are retained in the p-value audit but do not alter the table.

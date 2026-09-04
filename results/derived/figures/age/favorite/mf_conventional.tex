@@ -1,0 +1,394 @@
+\begin{figure*}
+\centering
+\begin{tikzpicture}
+[scale=0.95, transform shape]
+\begin{groupplot}[
+    group style={
+        group size=3 by 3,
+        horizontal sep=1.0cm,
+        vertical sep=0.3cm,
+    },
+    width=5.0cm,
+    height=3.7cm,
+    xtick={0,10,25,50,75,100},
+    xticklabels={0,10,25,50,75,100},
+    xticklabel style={font=\footnotesize},
+    yticklabel style={font=\footnotesize},
+    ymin=0, ymax=1.3,
+]
+% ===================== Row 1: ML100K =====================
+\nextgroupplot[
+    title={\textsc{PushR}},
+    ylabel={ML100K},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[svd] table {
+0 0.996529956668638
+10 0.949647690170693
+25 0.887133720548684
+50 0.881442612108383
+75 0.876100687404003
+100 0.852283181412315
+};
+\addplot[mf] table {
+0 0.913712221829792
+10 0.784343619594078
+25 0.865892133143356
+50 0.865141035225597
+75 0.924366396055212
+100 1.21441912214001
+};
+\addplot[nmf] table {
+0 0.952234914216954
+10 0.922262491259816
+25 0.937138252382027
+50 0.896445854218271
+75 0.903286200242374
+100 0.902343052650321
+};
+\addplot[neumf] table {
+0 0.94950494137291
+10 0.924029841139307
+25 0.864690814915109
+50 1.02400869337902
+75 0.950973216316852
+100 0.888124981954402
+};
+\nextgroupplot[
+    title={\textsc{PushLF}},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[svd] table {
+0 0.996529956668638
+10 0.928264131672776
+25 0.899192211183451
+50 0.879680745291485
+75 0.867180303138249
+100 0.853729357457714
+};
+\addplot[mf] table {
+0 0.913712221829792
+10 0.763801972617453
+25 0.930886612406321
+50 0.950316710493742
+75 0.844944369788058
+100 0.788311326337356
+};
+\addplot[nmf] table {
+0 0.952234914216954
+10 0.921217905872578
+25 0.973579169921091
+50 0.889043594195488
+75 0.915811365760878
+100 0.920780925791162
+};
+\addplot[neumf] table {
+0 0.94950494137291
+10 0.832904491296949
+25 0.928108435150742
+50 0.940897513818703
+75 0.920479157453213
+100 0.864886893136407
+};
+\nextgroupplot[
+    title={\textsc{NukeF}},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[svd] table {
+0 0.996529956668638
+10 0.969726116564544
+25 0.931306501104488
+50 0.91352669499504
+75 0.887773867782351
+100 0.871816457593786
+};
+\addplot[mf] table {
+0 0.913712221829792
+10 0.774206545519328
+25 0.93538631658069
+50 0.835001998484232
+75 0.85344100690171
+100 0.899695124535993
+};
+\addplot[nmf] table {
+0 0.952234914216954
+10 0.932146161588821
+25 0.937935423977494
+50 0.89196911626821
+75 0.971218373383818
+100 0.92992450505288
+};
+\addplot[neumf] table {
+0 0.94950494137291
+10 0.899523147444223
+25 0.894672403437024
+50 0.91908934806614
+75 0.874850131373613
+100 0.918596269371622
+};
+% ===================== Row 2: ML1M =====================
+\nextgroupplot[
+    ylabel={ML1M},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[svd] table {
+0 0.756222493604679
+10 0.761687932411032
+25 0.758701004273977
+50 0.764733304575487
+75 0.76518867083843
+100 0.769762549873642
+};
+\addplot[mf] table {
+0 0.80694035943605
+10 0.727932741072013
+25 0.760624783474177
+50 0.697918273146875
+75 0.691255774855067
+100 0.716028248626112
+};
+\addplot[nmf] table {
+0 0.835606997548101
+10 0.835184055245795
+25 0.840880276981943
+50 0.833688542580799
+75 0.843294892957495
+100 0.832556388282326
+};
+\addplot[neumf] table {
+0 0.864995711176548
+10 0.8481812199044
+25 0.845232967865708
+50 0.785873396350564
+75 0.789280857765505
+100 0.829084840202856
+};
+\nextgroupplot[
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[svd] table {
+0 0.756222493604679
+10 0.763623262309715
+25 0.761787463469247
+50 0.760124122209492
+75 0.759551956061221
+100 0.764903119679933
+};
+\addplot[mf] table {
+0 0.80694035943605
+10 0.686903479845989
+25 0.773799905944507
+50 0.667729041145992
+75 0.673040007830565
+100 0.707240659491632
+};
+\addplot[nmf] table {
+0 0.835606997548101
+10 0.833692102376581
+25 0.829009319772277
+50 0.830790281021925
+75 0.83341706167897
+100 0.825780102498972
+};
+\addplot[neumf] table {
+0 0.864995711176548
+10 0.860021548696105
+25 0.813758284875326
+50 0.859540345167671
+75 0.852818903351946
+100 0.885397905130472
+};
+\nextgroupplot[
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[svd] table {
+0 0.756222493604679
+10 0.760061814798714
+25 0.761872461486552
+50 0.762029677239555
+75 0.770929011307853
+100 0.77744518463114
+};
+\addplot[mf] table {
+0 0.80694035943605
+10 0.773235353784713
+25 0.758801599888177
+50 0.810205965603526
+75 0.637173663645481
+100 0.747217299426942
+};
+\addplot[nmf] table {
+0 0.835606997548101
+10 0.828484140260314
+25 0.821652550964007
+50 0.816434872400679
+75 0.818529905981192
+100 0.824524380848257
+};
+\addplot[neumf] table {
+0 0.864995711176548
+10 0.860307934328273
+25 0.787201366821568
+50 0.837430318153734
+75 0.889179738182437
+100 0.874563250755989
+};
+% ===================== Row 3: LFM1K =====================
+\nextgroupplot[
+    ylabel={LFM1K},
+    xlabel={Budget (\%)},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top
+]
+\addplot[svd] table {
+0 0.797479062089545
+10 0.852296433116444
+25 0.861632976119166
+50 0.843984695024197
+75 0.854549503197096
+100 0.852059677499355
+};
+\addplot[mf] table {
+0 0.899163096280596
+10 0.622560908432169
+25 0.512446125742844
+50 0.406739399122262
+75 0.274064638590036
+100 0.128990212872835
+};
+\addplot[nmf] table {
+0 0.874692317336906
+10 0.836033537046542
+25 0.849004376114433
+50 0.879640941453634
+75 0.754904541613726
+100 0.825920356316057
+};
+\addplot[neumf] table {
+0 0.825518213596815
+10 0.950220552332777
+25 0.938570875270762
+50 0.718793748469458
+75 0.835685273065544
+100 1.14916159509676
+};
+\nextgroupplot[
+    xlabel={Budget (\%)},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    legend columns=4,
+    legend cell align=left,
+    legend style={
+        font=\footnotesize,
+        at={(0.5,-0.55)},
+        anchor=north,
+        draw=none,
+        column sep=0.08cm,
+        inner xsep=1pt,
+        inner ysep=1pt,
+        nodes={inner sep=0pt, outer sep=0pt},
+    }
+]
+\addplot[svd] table {
+0 0.797479062089545
+10 0.851188422071022
+25 0.863388055263219
+50 0.851647882128251
+75 0.859035300535949
+100 0.858023750841127
+};
+\addplot[mf] table {
+0 0.899163096280596
+10 0.597336795842227
+25 0.491432934826686
+50 0.396032872591867
+75 0.248058419866154
+100 0.177823981885356
+};
+\addplot[nmf] table {
+0 0.874692317336906
+10 0.844515791490218
+25 0.799880694445719
+50 0.781506474348527
+75 0.926606936295323
+100 0.789621134633062
+};
+\addplot[neumf] table {
+0 0.825518213596815
+10 0.693301103912176
+25 0.897951510024456
+50 0.965786995984577
+75 0.839277283455879
+100 0.715026551893326
+};
+\addlegendimage{svd}
+\addlegendentry{SVD}
+\addlegendimage{mf}
+\addlegendentry{MF}
+\addlegendimage{nmf}
+\addlegendentry{NMF}
+\addlegendimage{neumf}
+\addlegendentry{NeuMF}
+\nextgroupplot[
+    xlabel={Budget (\%)},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top
+]
+\addplot[svd] table {
+0 0.797479062089545
+10 0.835238563465518
+25 0.823036889010956
+50 0.802509722429218
+75 0.821073987587592
+100 0.816997877824499
+};
+\addplot[mf] table {
+0 0.899163096280596
+10 0.849207721166382
+25 0.933472705357679
+50 0.93486149685162
+75 0.907664377889884
+100 0.911213315702811
+};
+\addplot[nmf] table {
+0 0.874692317336906
+10 0.883929646949626
+25 0.922230055086603
+50 0.810104242433981
+75 0.821403181283813
+100 0.798110364557279
+};
+\addplot[neumf] table {
+0 0.825518213596815
+10 0.981385075088361
+25 0.925859461893844
+50 1.25833206201858
+75 1.2419665422857
+100 0.737269272777228
+};
+\end{groupplot}
+\end{tikzpicture}
+\caption[C-Fair Favorite and ReverseFavorite Attacks on age against MF-based conventional recommenders]{C-Fair Favorite and ReverseFavorite Attacks on age against MF-based conventional recommenders. The benefit ratio $\gamma$ is shown for each model across datasets, attack budgets, and attack strategies (\textsc{PushR}, \textsc{PushLF}, and \textsc{NukeF}). \textsc{PushR} and \textsc{PushLF} are shown in their \textsc{Favorite} variant and \textsc{NukeF} in its \textsc{ReverseFavorite} variant.}
+\label{fig:gamma_mf_based_conventional_datasets_favorite_age}
+\end{figure*}

@@ -1,0 +1,383 @@
+\begin{figure*}
+\centering
+\begin{tikzpicture}
+[scale=0.95, transform shape]
+\begin{groupplot}[
+    group style={
+        group size=3 by 5,
+        horizontal sep=1.0cm,
+        vertical sep=0.3cm,
+    },
+    width=5.0cm,
+    height=3.7cm,
+    xtick={0,10,25,50,75,100},
+    xticklabels={0,10,25,50,75,100},
+    xticklabel style={font=\footnotesize},
+    yticklabel style={font=\footnotesize},
+    ymin=0, ymax=1.3,
+    restrict y to domain=0:1.3,
+]
+% ===================== Row 1: ML100K =====================
+\nextgroupplot[
+    title={\textsc{PushR}},
+    ylabel={ML100K},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.966823135487776
+10 0.93432956847887
+25 0.908525708008361
+50 0.915431136016143
+75 0.901531505427475
+100 0.907859233003696
+};
+\addplot[bnslimu] table {
+0 0.964437698638757
+10 0.935308053030932
+25 0.908324778484278
+50 0.915701427952962
+75 0.90060688204695
+100 0.90771417373753
+};
+\nextgroupplot[
+    title={\textsc{PushLF}},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.966823135487776
+10 0.921802874848024
+25 0.909490101122855
+50 0.913279575994228
+75 0.918238054458902
+100 0.908540067980393
+};
+\addplot[bnslimu] table {
+0 0.964437698638757
+10 0.922254145793934
+25 0.909946697254716
+50 0.912422725819024
+75 0.91066490773114
+100 0.906649677824932
+};
+\nextgroupplot[
+    title={\textsc{NukeF}},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.966823135487776
+10 0.969333502593887
+25 0.962747595980797
+50 0.968961325835858
+75 0.956806225725612
+100 0.961101905822592
+};
+\addplot[bnslimu] table {
+0 0.964437698638757
+10 0.966998179060014
+25 0.964819051214123
+50 0.968796611334566
+75 0.955391005010206
+100 0.958168392416862
+};
+% ===================== Row 2: ML1M =====================
+\nextgroupplot[
+    ylabel={ML1M},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.877909779329779
+10 0.870248416295372
+25 0.862600086907026
+50 0.864929740328542
+75 0.87440025541442
+100 0.87610787140288
+};
+\addplot[bnslimu] table {
+0 0.877984912067982
+10 0.871183283394539
+25 0.863748910382832
+50 0.865554805315605
+75 0.874647533712713
+100 0.87711319936116
+};
+\nextgroupplot[
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.877909779329779
+10 0.871090742259952
+25 0.864134416117131
+50 0.866244349658373
+75 0.8704707635709
+100 0.87062062946927
+};
+\addplot[bnslimu] table {
+0 0.877984912067982
+10 0.869976833593774
+25 0.864714014768929
+50 0.863596407199552
+75 0.870568397938526
+100 0.871035804537
+};
+\nextgroupplot[
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.877909779329779
+10 0.880030065760719
+25 0.875364924150827
+50 0.877486113875971
+75 0.88795647030067
+100 0.884436938608796
+};
+\addplot[bnslimu] table {
+0 0.877984912067982
+10 0.879227728560358
+25 0.877573604919243
+50 0.878034762874304
+75 0.886548540528287
+100 0.884181311780762
+};
+% ===================== Row 3: LFM1K =====================
+\nextgroupplot[
+    ylabel={LFM1K},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.929491122841608
+10 0.823468950142208
+25 0.626122020600429
+50 0.340093866867501
+75 0.0826784038397081
+100 0.0043561490815102
+};
+\addplot[bnslimu] table {
+0 0.92963530465394
+10 0.826036772505403
+25 0.627559309121241
+50 0.340034338416663
+75 0.0833220537071131
+100 0.0043562979336922
+};
+\nextgroupplot[
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.929491122841608
+10 0.827113159814982
+25 0.627166906760315
+50 0.33881805552808
+75 0.0822028734672059
+100 0
+};
+\addplot[bnslimu] table {
+0 0.92963530465394
+10 0.828846013803595
+25 0.625374452911202
+50 0.337628606851976
+75 0.0821128296187248
+100 0
+};
+\nextgroupplot[
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.929491122841608
+10 0.826527810048326
+25 0.626118471477667
+50 0.344059508500567
+75 0.0880639258254756
+100 0.0063062057771531
+};
+\addplot[bnslimu] table {
+0 0.92963530465394
+10 0.827702732521057
+25 0.626671327250293
+50 0.344696729891243
+75 0.0882062956964963
+100 0.0063979414278541
+};
+% ===================== Row 4: FTKY =====================
+\nextgroupplot[
+    ylabel={FTKY},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.9551759121947
+10 0.78478489468938
+25 0.689688876560126
+50 0.5919783412126
+75 0.543824247773799
+100 0.525005834363004
+};
+\addplot[bnslimu] table {
+0 0.953142468952928
+10 0.766019130222392
+25 0.653882042887064
+50 0.567786260925077
+75 0.520567799164588
+100 0.509212120689903
+};
+\nextgroupplot[
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.9551759121947
+10 0.779058216361065
+25 0.676717845916608
+50 0.563598183000889
+75 0.515966513835064
+100 0.492279407443485
+};
+\addplot[bnslimu] table {
+0 0.953142468952928
+10 0.774364088085156
+25 0.660562549279035
+50 0.54339470521468
+75 0.490464310268436
+100 0.47254607066583
+};
+\nextgroupplot[
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    xticklabels={}
+]
+\addplot[slimu] table {
+0 0.9551759121947
+10 0.908711821042479
+25 0.901430732666148
+50 0.884483375275933
+75 0.882677105088031
+100 0.899005456798205
+};
+\addplot[bnslimu] table {
+0 0.953142468952928
+10 0.904864446204865
+25 0.887996356444007
+50 0.878866403995365
+75 0.871598225251845
+100 0.881537084503442
+};
+% ===================== Row 5: FNYC =====================
+\nextgroupplot[
+    ylabel={FNYC},
+    xlabel={Budget (\%)},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top
+]
+\addplot[slimu] table {
+0 0.986028650401397
+10 0.910271514585715
+25 0.795476724044556
+50 0.71161517431856
+75 0.613917287459379
+100 0.584229113957301
+};
+\addplot[bnslimu] table {
+0 0.975067561874453
+10 0.911924804983347
+25 0.795727481666008
+50 0.712424530161598
+75 0.608132874873527
+100 0.577780221814037
+};
+\nextgroupplot[
+    xlabel={Budget (\%)},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top,
+    legend columns=2,
+    legend cell align=left,
+    legend style={
+        font=\footnotesize,
+        at={(0.5,-0.55)},
+        anchor=north,
+        draw=none,
+        column sep=0.08cm,
+        inner xsep=1pt,
+        inner ysep=1pt,
+        nodes={inner sep=0pt, outer sep=0pt},
+    }
+]
+\addplot[slimu] table {
+0 0.986028650401397
+10 0.917892826303393
+25 0.808276627426241
+50 0.721674929594183
+75 0.609314316311698
+100 0.575390820894562
+};
+\addplot[bnslimu] table {
+0 0.975067561874453
+10 0.917581906957616
+25 0.80990241042156
+50 0.719721174578324
+75 0.599791152704122
+100 0.562218833985739
+};
+\addlegendimage{slimu}
+\addlegendentry{SLIM-u}
+\addlegendimage{bnslimu}
+\addlegendentry{BNSLIM-u}
+\nextgroupplot[
+    xlabel={Budget (\%)},
+    extra y ticks={0.8},
+    extra y tick style={grid=major, grid style={black, dashed}},
+    axis on top
+]
+\addplot[slimu] table {
+0 0.986028650401397
+10 0.968582552543184
+25 0.931258170526271
+50 0.914172427295143
+75 0.86690857472556
+100 0.880883243177322
+};
+\addplot[bnslimu] table {
+0 0.975067561874453
+10 0.953768226895622
+25 0.913927441703175
+50 0.90811427846885
+75 0.869071838710286
+100 0.874843259403862
+};
+\end{groupplot}
+\end{tikzpicture}
+\caption[C-Fair Influencer Attack on gender against fairness-aware neighborhood-based recommender BNSLIM-u]{C-Fair Influencer Attack on gender against fairness-aware neighborhood-based recommender BNSLIM-u. The benefit ratio $\gamma$ is shown across attack strategies, datasets, and budgets. The conventional SLIM-u counterpart is included for comparison.}
+\label{fig:gamma_neighborhood_based_fair_datasets}
+\end{figure*}

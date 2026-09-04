@@ -1,0 +1,108 @@
+cfair_attacks:
+  - attack_id: cfair_influencer_push_random
+    attack_class: CFairInfluencerAttack
+    attack_config: {}
+    target_strategy: push_random
+    profile_strategy: copy_influencers
+    num_selected_values: [null]
+    num_filler_values: [null]
+
+  - attack_id: cfair_sampling_push_random
+    attack_class: CFairSamplingAttack
+    attack_config: {}
+    target_strategy: push_random
+    profile_strategy: sample_unprivileged_profiles
+    num_selected_values: [null]
+    num_filler_values: [null]
+
+  - attack_id: cfair_influencer_top1_push_random
+    attack_class: CFairInfluencerAttack
+    attack_config:
+      topk: 1
+    target_strategy: push_random
+    profile_strategy: copy_top_1_influencers
+    num_selected_values: [null]
+    num_filler_values: [null]
+
+  - attack_id: cfair_influencer_top5_push_random
+    attack_class: CFairInfluencerAttack
+    attack_config:
+      topk: 5
+    target_strategy: push_random
+    profile_strategy: copy_top_5_influencers
+    num_selected_values: [null]
+    num_filler_values: [null]
+
+  - attack_id: cfair_influencer_top10_push_random
+    attack_class: CFairInfluencerAttack
+    attack_config:
+      topk: 10
+    target_strategy: push_random
+    profile_strategy: copy_top_10_influencers
+    num_selected_values: [null]
+    num_filler_values: [null]
+
+  - attack_id: cfair_influencer_push_least_favorite
+    attack_class: CFairInfluencerAttack
+    attack_config:
+      mode: least_favorite
+    target_strategy: push_least_favorite
+    profile_strategy: copy_influencers
+    num_selected_values: [null]
+    num_filler_values: [null]
+
+  - attack_id: cfair_influencer_nuke_favorite
+    attack_class: CFairInfluencerAttack
+    attack_config:
+      mode: favorite
+    target_strategy: nuke_favorite
+    profile_strategy: copy_influencers
+    num_selected_values: [null]
+    num_filler_values: [null]
+
+  - attack_id: cfair_favorite_push_random
+    attack_class: CFairFavoriteAttack
+    attack_config: {}
+    target_strategy: push_random
+    profile_strategy: favorite_items
+    num_selected_values: ["auto"]
+    num_filler_values: [null]
+
+  - attack_id: cfair_favorite_push_least_favorite
+    attack_class: CFairFavoriteAttack
+    attack_config:
+      mode: least_favorite
+    target_strategy: push_least_favorite
+    profile_strategy: favorite_items
+    num_selected_values: ["auto"]
+    num_filler_values: [null]
+
+  - attack_id: cfair_reverse_favorite_nuke_favorite
+    attack_class: CFairReverseFavoriteAttack
+    attack_config: {}
+    target_strategy: nuke_favorite
+    profile_strategy: least_favorite_items
+    num_selected_values: ["auto"]
+    num_filler_values: [null]
+
+vanilla_attacks:
+  - attack_id: power_user
+    attack_class: PowerUserAttack
+    target_strategy: push_random
+    profile_strategy: copy_global_power_users
+    num_selected_values: [null]
+    num_filler_values: [null]
+
+  - attack_id: bandwagon
+    attack_class: BandwagonAttack
+    target_strategy: push_random
+    profile_strategy: global_favorite_items
+    num_selected_values: ["auto"]
+    num_filler_values: [null]
+
+  - attack_id: reverse_bandwagon
+    attack_class: ReverseBandwagonAttack
+    target_strategy: nuke_random
+    profile_strategy: global_least_favorite_items
+    num_selected_values: ["auto"]
+    num_filler_values: [null]

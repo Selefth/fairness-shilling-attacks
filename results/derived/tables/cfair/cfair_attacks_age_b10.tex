@@ -1,0 +1,50 @@
+\begin{table*}
+\begin{adjustbox}{max width=\textwidth}
+\centering
+\begin{tabular}{l l cccc cccc}
+\toprule
+ & & \multicolumn{4}{c}{\textbf{Conventional} (8 models)} & \multicolumn{4}{c}{\textbf{Fairness-aware} (5 models)} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-10}
+\textbf{Dataset} & \textbf{Attack} & $\Delta\gamma$ & $\Delta m^{\max}$ (\%) & $\gamma<0.8$ & Sig. & $\Delta\gamma$ & $\Delta m^{\max}$ (\%) & $\gamma<0.8$ & Sig. \\
+\midrule
+\multirow{9}{*}{ML100K} & \multicolumn{9}{l}{\textsc{PushR}} \\
+ & \quad \textsc{Influencer} & $[-0.15, 0.00]$ & $4.2$ & 2 (2) & 5 (1) & $[-0.42, -0.02]$ & $4.5$ & 4 (4) & 4 (3) \\
+ & \quad \textsc{Favorite} & $[-0.13, 0.01]$ & $2.9$ & 1 (1) & 1 (0) & $[-0.32, -0.01]$ & $4.1$ & 4 (4) & 3 (3) \\
+\addlinespace[2pt]
+ & \multicolumn{9}{l}{\textsc{PushLF}} \\
+ & \quad \textsc{Influencer} & $[-0.16, 0.00]$ & $3.3$ & 1 (1) & 2 (1) & $[-0.37, -0.03]$ & $3.7$ & 4 (4) & 4 (4) \\
+ & \quad \textsc{Favorite} & $[-0.15, 0.01]$ & $3.3$ & 1 (1) & 1 (1) & $[-0.33, -0.01]$ & $3.8$ & 4 (4) & 3 (1) \\
+\cmidrule(lr){2-10}
+ & \multicolumn{9}{l}{\textsc{NukeF}} \\
+ & \quad \textsc{Influencer} & $[-0.14, 0.00]$ & $3.0$ & 1 (1) & 3 (2) & $[-0.30, -0.02]$ & $4.1$ & 3 (3) & 3 (1) \\
+ & \quad \textsc{ReverseFavorite} & $[-0.14, 0.01]$ & $3.2$ & 1 (1) & 2 (0) & $[-0.32, 0.01]$ & $4.6$ & 4 (4) & 3 (2) \\
+\cmidrule(lr){1-10}
+\multirow{9}{*}{ML1M} & \multicolumn{9}{l}{\textsc{PushR}} \\
+ & \quad \textsc{Influencer} & $[-0.05, 0.01]$ & $3.0$ & 2 (1) & 0 & $[-0.11, 0.01]$ & $2.2$ & 4 (1) & 0 \\
+ & \quad \textsc{Favorite} & $[-0.08, 0.01]$ & $3.1$ & 2 (1) & 0 & $[-0.23, 0.00]$ & $2.6$ & 4 (1) & 1 (1) \\
+\addlinespace[2pt]
+ & \multicolumn{9}{l}{\textsc{PushLF}} \\
+ & \quad \textsc{Influencer} & $[-0.05, 0.01]$ & $3.1$ & 2 (1) & 0 & $[-0.10, 0.07]$ & $2.3$ & 4 (1) & 1 (0) \\
+ & \quad \textsc{Favorite} & $[-0.12, 0.01]$ & $3.1$ & 2 (1) & 0 & $[-0.16, 0.03]$ & $2.4$ & 4 (1) & 2 (0) \\
+\cmidrule(lr){2-10}
+ & \multicolumn{9}{l}{\textsc{NukeF}} \\
+ & \quad \textsc{Influencer} & $[-0.05, 0.02]$ & $3.0$ & 2 (1) & 0 & $[-0.09, 0.05]$ & $2.2$ & 4 (1) & 0 \\
+ & \quad \textsc{ReverseFavorite} & $[-0.03, 0.00]$ & $3.1$ & 2 (1) & 0 & $[-0.12, 0.01]$ & $2.2$ & 4 (1) & 1 (1) \\
+\cmidrule(lr){1-10}
+\multirow{9}{*}{LFM1K} & \multicolumn{9}{l}{\textsc{PushR}} \\
+ & \quad \textsc{Influencer} & $[-0.15, 0.06]$ & $11.0$ & 6 (3) & 2 (2) & $[-0.20, -0.10]$ & $10.5$ & 5 (4) & 4 (2) \\
+ & \quad \textsc{Favorite} & $[-0.28, 0.12]$ & $9.7$ & 4 (1) & 3 (2) & $[-0.35, 0.00]$ & $9.9$ & 5 (4) & 4 (4) \\
+\addlinespace[2pt]
+ & \multicolumn{9}{l}{\textsc{PushLF}} \\
+ & \quad \textsc{Influencer} & $[-0.13, 0.15]$ & $10.5$ & 6 (3) & 2 (0) & $[-0.19, -0.09]$ & $10.4$ & 5 (4) & 3 (0) \\
+ & \quad \textsc{Favorite} & $[-0.30, 0.05]$ & $10.3$ & 5 (2) & 4 (2) & $[-0.42, 0.00]$ & $11.1$ & 5 (4) & 4 (4) \\
+\cmidrule(lr){2-10}
+ & \multicolumn{9}{l}{\textsc{NukeF}} \\
+ & \quad \textsc{Influencer} & $[-0.14, 0.02]$ & $10.7$ & 5 (2) & 3 (2) & $[-0.09, 0.00]$ & $10.5$ & 1 (0) & 1 (1) \\
+ & \quad \textsc{ReverseFavorite} & $[-0.05, 0.16]$ & $7.6$ & 3 (0) & 0 & $[-0.08, 0.00]$ & $7.4$ & 1 (0) & 1 (1) \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\caption{Effect of fairness shilling attacks at a 10\% budget on C-fairness when age is used as the sensitive attribute, across 8 conventional and 5 fairness-aware recommendation models. Rows group each dataset's attacks by target-item strategy (\textsc{PushR}, \textsc{PushLF}, \textsc{NukeF}). $\Delta\gamma$ reports the min--max attack-induced change in benefit ratio within each model family, and $\Delta m^{\max}$ the largest absolute post-attack group-benefit difference in percentage points. $\gamma < 0.8$ counts models below the four-fifths threshold after the attack; parentheses indicate those pushed below it by the attack. Sig.\ counts models with a significant C-fairness reduction ($p < 0.05$); parentheses indicate those remaining significant after BH correction across all 234 tests.}
+\label{tab:cfair_attacks_age_b10}
+\end{table*}

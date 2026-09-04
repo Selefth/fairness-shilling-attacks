@@ -1,0 +1,50 @@
+\begin{table*}
+\centering
+\caption[C-fairness effects of partial-knowledge attacks at a $10\%$ budget]{Partial-knowledge C-fairness attacks at a $10\%$ budget.
+Results are reported only for model--dataset pairs where at least one attack configuration causes a statistically significant fairness degradation.
+Values correspond to the benefit ratio $\gamma$ (C-fairness); lower values indicate greater unfairness.
+\textit{Clean} reports the C-fairness value at $0\%$ attack budget, while \textit{Full} denotes the original full-knowledge \textsc{PushR} C-Fair Influencer Attack at the stated budget.
+The lowest post-attack $\gamma$ in each row is shown in bold.
+Statistical significance is measured relative to the clean model using uncorrected p-values ($^{*}p<0.05$, $^{**}p<0.01$, $^{***}p<0.001$).}
+\label{tab:partial_knowledge_attacks}
+\footnotesize
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llcccccc}
+\toprule
+Dataset & Model & Clean & Full & Sampling & Top-1 & Top-5 & Top-10 \\
+\midrule
+\multirow{4}{*}{ML100K} & bnslim-u-gender & 0.964 & 0.935 & 0.959 & 0.962 & 0.926 & \textbf{0.914}$^{*}$ \\
+ & ease-u & 0.994 & \textbf{0.873} & 0.945$^{**}$ & 1.001 & 0.980 & 0.970 \\
+ & mf-absolute-gender & 1.142 & 0.890$^{*}$ & 0.920$^{**}$ & 0.937$^{*}$ & \textbf{0.759}$^{**}$ & 0.864$^{*}$ \\
+ & mf-value-gender & 1.066 & 0.931$^{**}$ & 0.989 & 0.930$^{*}$ & \textbf{0.924} & 0.956 \\
+\cmidrule(lr){1-8}
+\multirow{4}{*}{ML1M} & ease-u & 0.906 & \textbf{0.894}$^{*}$ & 0.909 & 0.906 & 0.900 & 0.897 \\
+ & mf-over-gender & 0.838 & 0.803 & 0.825 & 0.771 & 0.766$^{*}$ & \textbf{0.740}$^{**}$ \\
+ & mf-under-gender & 0.816 & 0.434 & 0.584$^{*}$ & 0.673$^{*}$ & \textbf{0.428} & 0.771$^{***}$ \\
+ & mf-value-gender & 0.824 & 0.801 & \textbf{0.758}$^{*}$ & 0.804 & 0.776 & 0.777$^{*}$ \\
+\cmidrule(lr){1-8}
+\multirow{9}{*}{LFM1K} & bnslim-u-gender & 0.930 & \textbf{0.826} & 0.832$^{***}$ & 0.925 & 0.887 & 0.855 \\
+ & ease-i & 0.997 & \textbf{0.891}$^{*}$ & 0.911$^{*}$ & 0.993 & 0.948 & 0.901$^{*}$ \\
+ & ease-u & 0.980 & \textbf{0.869}$^{*}$ & 0.872$^{***}$ & 0.965 & 0.930 & 0.898$^{*}$ \\
+ & mf & 0.981 & \textbf{0.845}$^{**}$ & 0.932$^{*}$ & 0.949 & 0.916 & 0.899 \\
+ & mf-absolute-gender & 0.963 & \textbf{0.815} & 0.883$^{*}$ & 0.985 & 0.925 & 0.881 \\
+ & mf-under-gender & 0.961 & \textbf{0.803}$^{*}$ & 0.885 & 0.978 & 0.920 & 0.874 \\
+ & mf-value-gender & 0.957 & \textbf{0.798}$^{*}$ & 0.876 & 0.970 & 0.911 & 0.878 \\
+ & slim-i & 0.991 & \textbf{0.888} & 0.899$^{*}$ & 0.993 & 0.954 & 0.907 \\
+ & slim-u & 0.929 & \textbf{0.823} & 0.831$^{***}$ & 0.928 & 0.889 & 0.853 \\
+\cmidrule(lr){1-8}
+\multirow{6}{*}{FTKY} & bnslim-u-gender & 0.953 & \textbf{0.766}$^{***}$ & 0.907$^{**}$ & 0.950 & 0.936 & 0.918$^{*}$ \\
+ & ease-i & 0.959 & \textbf{0.924}$^{*}$ & 0.955 & 0.966 & 0.950 & 0.949 \\
+ & mf-absolute-gender & 0.990 & \textbf{0.810}$^{***}$ & 0.819$^{*}$ & 0.858$^{**}$ & 0.828$^{**}$ & 0.855 \\
+ & mf-value-gender & 0.938 & 0.848$^{*}$ & \textbf{0.840}$^{*}$ & 0.893 & 0.881 & 0.889 \\
+ & slim-u & 0.955 & \textbf{0.785}$^{***}$ & 0.910$^{***}$ & 0.946 & 0.935 & 0.923 \\
+ & svd & 0.952 & 0.948 & 0.951$^{*}$ & 0.964 & \textbf{0.947} & 0.949 \\
+\cmidrule(lr){1-8}
+\multirow{4}{*}{FNYC} & bnslim-u-gender & 0.975 & \textbf{0.912} & 0.929$^{*}$ & 0.981 & 0.974 & 0.975 \\
+ & ease-i & 0.937 & \textbf{0.876}$^{*}$ & 0.928 & 0.940 & 0.934 & 0.943 \\
+ & mf-absolute-gender & 1.015 & 0.759$^{**}$ & 0.857 & \textbf{0.727}$^{**}$ & 0.911 & 0.823$^{*}$ \\
+ & slim-u & 0.986 & \textbf{0.910}$^{*}$ & 0.930$^{*}$ & 0.992 & 0.990 & 0.988 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table*}

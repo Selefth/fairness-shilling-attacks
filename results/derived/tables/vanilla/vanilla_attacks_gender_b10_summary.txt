@@ -1,0 +1,41 @@
+[vanilla/gender] model-wise tests: 195
+  uncorrected p<0.05: 9 (4.6%)   [chance expectation under the null: 9.8]
+  BH-significant:       0 (0.0%)
+  smallest BH-adjusted p: 0.851
+  Conventional    n=120  uncorrected=1   BH=0
+  Fairness-aware  n=75   uncorrected=8   BH=0
+
+Threshold crossings (gamma < 0.8 after injection; induced = at or above it before):
+  dataset  attack                   conventional        fairness-aware
+  ML100K   PowerUser                0/8 (0 induced)     0/5 (0 induced)
+  ML100K   Bandwagon                0/8 (0 induced)     0/5 (0 induced)
+  ML100K   ReverseBandwagon         0/8 (0 induced)     0/5 (0 induced)
+  ML1M     PowerUser                2/8 (0 induced)     4/5 (4 induced)
+  ML1M     Bandwagon                1/8 (0 induced)     3/5 (3 induced)
+  ML1M     ReverseBandwagon         1/8 (0 induced)     3/5 (3 induced)
+  LFM1K    PowerUser                0/8 (0 induced)     3/5 (3 induced)
+  LFM1K    Bandwagon                0/8 (0 induced)     0/5 (0 induced)
+  LFM1K    ReverseBandwagon         0/8 (0 induced)     0/5 (0 induced)
+  FTKY     PowerUser                0/8 (0 induced)     0/5 (0 induced)
+  FTKY     Bandwagon                0/8 (0 induced)     0/5 (0 induced)
+  FTKY     ReverseBandwagon         0/8 (0 induced)     0/5 (0 induced)
+  FNYC     PowerUser                0/8 (0 induced)     0/5 (0 induced)
+  FNYC     Bandwagon                1/8 (1 induced)     0/5 (0 induced)
+  FNYC     ReverseBandwagon         1/8 (1 induced)     0/5 (0 induced)
+  total                             6/120 (2 induced)   13/75 (13 induced)
+
+Pre-attack state (no injection):
+  dataset  conventional           below   fairness-aware         below  
+  ML100K   [0.84, 1.00]           0/8     [0.96, 1.14]           0/5    
+  ML1M     [0.76, 0.91]           2/8     [0.80, 0.88]           0/5    
+  LFM1K    [0.75, 1.00]           1/8     [0.93, 0.96]           0/5    
+  FTKY     [0.84, 1.00]           0/8     [0.88, 0.99]           0/5    
+  FNYC     [0.86, 0.99]           0/8     [0.83, 1.02]           0/5    
+
+Group-assignment audit:
+  The fairness intervention of these models has reversed the pre-attack
+  disparity. They keep their conventional counterpart's group split, so
+  their gamma reads privileged over unprivileged benefit:
+    ML100K  mf-value-gender      gamma = 1.066, unprivileged = m (ndcg_f=0.1162, ndcg_m=0.1239)
+    ML100K  mf-absolute-gender   gamma = 1.142, unprivileged = m (ndcg_f=0.0994, ndcg_m=0.1134)
+    FNYC    mf-absolute-gender   gamma = 1.015, unprivileged = f (ndcg_f=0.1944, ndcg_m=0.1915)
